@@ -10,7 +10,18 @@ Ladon 192.168.1.8 WinrmScan
 Ladon 192.168.1.8/24 WinrmScan
 ```
 
-### LadonGo Remote Execute
+### Ladon WinrmExec
+```Bash
+Usage:
+Ladon WinrmExec <Target> [Port] [Domain] [Username] [Password] <Command>
+Default Port is 5985
+Example:
+Ladon WinrmExec 192.168.1.116 . k8gege K8test520!@# calc.exe
+Ladon WinrmExec 192.168.1.116 80 . k8gege K8test520!@# calc.exe
+Ladon WinrmExec 192.168.1.116 5985 . k8gege K8test520!@# calc.exe
+```
+
+### LadonGo WinrmCmd
 
 ```Bash
 Ladon SshCmd host port user pass cmd
